@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background: #1B1C1e;
+    height: 100px;
+    color: white;
+}
+
+#wrap-title a {
+    display: block;
+    padding: 20px;
+    line-height: 55px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    float: left;
+}
+
+#header-menu {
+    float: right;
+    margin: 28px;
+}
+
+#header-menu div {
+    display: none;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+#navbar {
+    height: 100px;
+}
+
+#navbar ul {
+    overflow: hidden;
+}
+
+#navbar ul li{
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    height: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+#navbar ul li a:hover {
+    background: #0055ff;
+}
+
+main {
+    background: white;
+    height: 85vh;
+}
+
+footer {
+    background: #1B1C1e;
+    height: 100px;
+}
+
+#wrap-footer {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+#wrap-footer p {
+    display: block;
+    text-align: center;
+    padding-top: 45px;
+}
+
+@media only screen and (max-width:700px) {
+    header {
+        height: 80px;
+    }
+
+    #wrap-title a {
+        line-height: 45px;
+        font-size: 30px;
+    }
+
+    #header-menu {
+        margin: 25px;
+    }
+
+    #header-menu div {
+        width: 20px;
+        height: 2px;
+        margin: 6px 0;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #header-menu {
+        float: right;
+        margin: 23px;
+    }
+
+    #header-menu div {
+        display: block;
+        width: 25px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    main {
+        height: 800px;
+    }
+
+    footer {
+        background: #1B1C1e;
+        height: 80px;
+    }
+    
+    #wrap-footer p {
+        padding-top: 30px;
+    }
+}
