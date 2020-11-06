@@ -4,27 +4,41 @@
     box-sizing: border-box;
 }
 
+:root {
+    --head-foot-color: #1B1C1e;
+    --azul-hover: #0055ff;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-    background: #1B1C1e;
+    background: var(--head-foot-color);
     height: 100px;
     color: white;
 }
 
+#wrap-title {
+    display: flex;
+    flex-direction: row;
+}
+
 #wrap-title a {
     display: block;
+    width: 100%;
     padding: 20px;
     line-height: 55px;
     text-decoration: none;
     font-size: 40px;
     color: white;
-    float: left;
 }
 
+/*
+ * MENU HAMBURGUESA
+ */
 #header-menu {
+    display: none;
     float: right;
     margin: 28px;
 }
@@ -35,19 +49,20 @@ header {
     height: 4px;
     background-color: white;
     margin: 6px 0;
+    border-radius: 10px 10px;
 }
 
+/*
+ * NAVBAR
+ */
 #navbar {
     height: 100px;
 }
 
-#navbar ul {
-    overflow: hidden;
-}
-
-#navbar ul li{
-    float: right;
+#navbar ul{
     list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #navbar ul li a{
@@ -55,12 +70,22 @@ header {
     height: 100px;
     text-decoration: none;
     text-align: center;
+    font-size: 20px;
     color: white;
-    padding: 40px;
+}
+
+#nav-element1 {
+    order: 3;
+}
+#nav-element2 {
+    order: 2;
+}
+#nav-element3 {
+    order: 1;
 }
 
 #navbar ul li a:hover {
-    background: #0055ff;
+    background: var(--azul-hover);
 }
 
 main {
@@ -69,7 +94,7 @@ main {
 }
 
 footer {
-    background: #1B1C1e;
+    background: var(--head-foot-color);
     height: 100px;
 }
 
@@ -85,14 +110,15 @@ footer {
     padding-top: 45px;
 }
 
-@media only screen and (max-width:700px) {
+
+/*@media screen and (max-width:768px) {
     header {
         height: 80px;
     }
 
     #wrap-title a {
         line-height: 45px;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #header-menu {
@@ -123,11 +149,10 @@ footer {
     }
 
     main {
-        height: 800px;
+        height: 85vh;
     }
 
     footer {
-        background: #1B1C1e;
         height: 80px;
     }
     
@@ -135,3 +160,47 @@ footer {
         padding-top: 30px;
     }
 }
+
+@media screen and (max-width:300px) {
+    header {
+        height: 225px;
+    }
+
+    #wrap-title a{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #header-menu {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
+        height: 20px;
+    }
+
+    #navbar ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navbar ul li{
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    #navbar ul li a{
+        display: block;
+        text-align: center;
+        height: 10px;
+        padding: 20px;
+        line-height: 0px;
+    }
+
+
+
+
+}*/
