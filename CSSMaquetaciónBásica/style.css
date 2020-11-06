@@ -19,12 +19,12 @@ header {
     color: white;
 }
 
-#wrap-title {
+#wrap-head {
     display: flex;
     flex-direction: row;
 }
 
-#wrap-title a {
+#wrap-head a {
     display: block;
     width: 100%;
     padding: 20px;
@@ -43,14 +43,14 @@ header {
     margin: 28px;
 }
 
-#header-menu div {
+/*#header-menu div {
     display: none;
     width: 25px;
     height: 4px;
     background-color: white;
     margin: 6px 0;
     border-radius: 10px 10px;
-}
+}*/
 
 /*
  * NAVBAR
@@ -59,13 +59,13 @@ header {
     height: 100px;
 }
 
-#navbar ul{
+#navbar ul {
     list-style: none;
     display: flex;
     flex-direction: row-reverse;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     display: block;
     height: 100px;
     text-decoration: none;
@@ -77,9 +77,11 @@ header {
 #nav-element1 {
     order: 3;
 }
+
 #nav-element2 {
     order: 2;
 }
+
 #nav-element3 {
     order: 1;
 }
@@ -111,24 +113,14 @@ footer {
 }
 
 
-/*@media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     header {
         height: 80px;
     }
 
-    #wrap-title a {
+    #wrap-head a {
         line-height: 45px;
         font-size: 25px;
-    }
-
-    #header-menu {
-        margin: 25px;
-    }
-
-    #header-menu div {
-        width: 20px;
-        height: 2px;
-        margin: 6px 0;
     }
 
     #navbar {
@@ -136,16 +128,16 @@ footer {
     }
 
     #header-menu {
-        float: right;
-        margin: 23px;
+        display: block;
+        margin: 25px;
     }
 
     #header-menu div {
-        display: block;
-        width: 25px;
-        height: 4px;
+        width: 24px;
+        height: 3px;
         background-color: white;
         margin: 6px 0;
+        border-radius: 20px 20px;
     }
 
     main {
@@ -155,7 +147,7 @@ footer {
     footer {
         height: 80px;
     }
-    
+
     #wrap-footer p {
         padding-top: 30px;
     }
@@ -166,7 +158,7 @@ footer {
         height: 225px;
     }
 
-    #wrap-title a{
+    #wrap-head a {
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -186,21 +178,17 @@ footer {
         margin: 0 auto;
     }
 
-    #navbar ul li{
+    #navbar ul li {
         float: none;
         clear: both;
         text-align: center;
     }
 
-    #navbar ul li a{
+    #navbar ul li a {
         display: block;
         text-align: center;
         height: 10px;
         padding: 20px;
         line-height: 0px;
     }
-
-
-
-
-}*/
+}
