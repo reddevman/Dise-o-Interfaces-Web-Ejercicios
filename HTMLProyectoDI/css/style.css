@@ -57,19 +57,19 @@ header h1 {
 }
 
 .logo {
-    flex-basis: 70%;
+    flex-grow: 1;
+    margin-left: 20px;
 }
 
 .logo img {
     display: block;
-    width: 100px;
+    width: 80px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     flex-direction: row-reverse;
-    flex-basis: 30%;
 }
 
 .navbar ul li {
@@ -102,6 +102,7 @@ header h1 {
     color: black;
     cursor: pointer;
     color: var(--morado1);
+    text-shadow: 1px 1px black;
 }
 
 .navbar ul li a:hover {
