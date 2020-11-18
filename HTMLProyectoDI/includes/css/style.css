@@ -1,0 +1,226 @@
+@font-face {
+    font-family: PixelFont;
+    src: url('../fonts/zx-spectrum.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #33425b;
+    --celeste: #5BAAEC;
+    --morado1: #526ED0;
+    --morado2: #484CB0;
+}
+
+/* FUENTES **************************
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+    background-color: var(--celeste);
+}
+
+.container {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    box-shadow: 10px 10px black;
+    border: 5px solid var(--morado1);
+}
+
+/*  ENCABEZADO  */
+/*  TÍTULO  */
+
+.container header h1 {
+    display: block;
+    font-family: PixelFont;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    color: var(--azul);
+}
+
+.bordertitle {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+/*  CONTENEDOR CON LOGO Y NAVBAR    */
+.wrap-head {
+    height: 50px;
+    display: flex;
+    margin-top: 50px;
+    background: white;
+}
+
+.logo {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.logo img {
+    display: block;
+    width: 200px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    align-self: start;
+    margin-top: 35px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    color: var(--morado1);
+    text-shadow: 1px 1px black;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+#nav-menu {
+    display: none;
+    margin: 25px;
+}
+
+.wrap-head a.icon {
+    display: none;
+}
+
+/* OVERLAY - Fondo */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: var(--azul);
+    /* Black fallback color */
+    background-color: rgba(51, 66, 91,0.8);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* OVERLAY - Posición del contenido */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* OVERLAY - Enlaces */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    font-family: PixelFont;
+    color: black;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* OVERLAY - Efectos hover de los enlaces */
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* OVERLAY - Botón cerrar */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* *****************************************************
+/* ******************** RESPONSIVE *********************
+/* *****************************************************/
+@media (max-width:1200px) {
+
+    .container header h1 {
+        font-size: 1.5em;
+    }
+
+    .logo img {
+        display: block;
+        width: 150px;
+    }
+
+    /*#nav-menu {
+        display: block;
+        margin-top: 20px;
+    }
+
+    #nav-menu div {
+        width: 24px;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        margin: 6px 0;
+        border-radius: 20px 20px;
+    }*/
+
+    #nav-list {
+        display: none;
+    }
+
+    .wrap-head a {
+        margin-top: 5px;
+        margin-right: 10px;
+        color: white;
+        padding: 8px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .wrap-head a.icon {
+        background: var(--morado2);
+        display: block;
+    }
+
+    .wrap-head a:hover {
+        background-color: var(--celeste);
+        color: black;
+    }
+
+}
