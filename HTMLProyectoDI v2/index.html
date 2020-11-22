@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1><span>ALEX MÁRQUEZ</span>
+                    <br>
+                    WEB DEVELOPER
+                </h1>
+            </header>
+            <!-- OVERLAY -->
+            <div id="myNav" class="overlay">
+
+                <!-- Botón para cerrar el overlay -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Contenido del overlay -->
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="#">PERFIL PROFESIONAL</a>
+                    <a href="#">PORTFOLIO</a>
+                    <a href="#">GUIA DE ESTILOS</a>
+                    <a href="#">CONTACTO</a>
+                </div>
+            </div>
+            <div id="sticky-menu">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+            <div class="sections">
+                <a href="index.html"><i class='fas fa-home'></i>HOME</a>
+                <a href="perfil.html"><i class='fas fa-id-card'></i>PERFIL PROFESIONAL</a>    
+                <a href="portfolio.html"><i class='fas fa-copy'></i>PORTFOLIO</a>
+                <a href="guia.html"><i class='fas fa-pen'></i>GUIA DE ESTILOS</a>
+                <a href="contacto.html"><i class='fas fa-envelope-open'></i>CONTACTO</a>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>

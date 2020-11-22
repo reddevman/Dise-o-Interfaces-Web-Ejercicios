@@ -27,14 +27,14 @@ body {
 
 .container {
     width: 80%;
-    height: 500px;
+    height: auto;
     margin: 0 auto;
     margin-top: 20px;
-    padding: 20px;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     box-shadow: 10px 10px black;
-    border: 5px solid var(--morado1);
+    border: 10px solid var(--morado1);
 }
 
 /*  ENCABEZADO  */
@@ -45,23 +45,45 @@ body {
     font-family: PixelFont;
     font-size: 2em;
     text-align: center;
-    margin-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 40px;
     color: var(--azul);
 }
 
-.bordertitle {
+.container header h3 {
+    /*display: block;*/
+    font-family: PixelFont;
+    font-size: 1em;
+    text-align: center;
+    line-height: 0.5;
+    padding-top: 40px;
+    color: var(--azul);
+    display: flex;
     width: 70%;
     margin: 0 auto;
-    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+}
+
+h3:before,
+h3:after {
+    content: '';
+    border-top: 3px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h3:after {
+    margin: 0 0 0 20px;
 }
 
 /*  CONTENEDOR CON LOGO Y NAVBAR    */
 .wrap-head {
-    height: 50px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     margin-top: 50px;
-    background: white;
+    background: var(--morado1);
 }
 
 .logo {
@@ -71,7 +93,9 @@ body {
 
 .logo img {
     display: block;
-    width: 200px;
+    width: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .navbar ul {
@@ -81,23 +105,23 @@ body {
 
 .navbar ul li {
     align-self: start;
-    margin-top: 35px;
+    margin-top: 28px;
     margin-right: 30px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .navbar ul li a {
     display: block;
     font-size: 15px;
     text-decoration: none;
-    color: black;
     cursor: pointer;
-    color: var(--morado1);
-    text-shadow: 1px 1px black;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
 .navbar ul li a:hover {
-    color: black;
+    color: var(--celeste);
 }
 
 #nav-menu {
@@ -170,6 +194,27 @@ body {
     font-size: 60px;
 }
 
+main {
+    height: 85vh;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: var(--morado1);
+}
+
+footer div {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+
 /* *****************************************************
 /* ******************** RESPONSIVE *********************
 /* *****************************************************/
@@ -179,9 +224,9 @@ body {
         font-size: 1.5em;
     }
 
-    .logo img {
+    .logo a img {
         display: block;
-        width: 150px;
+        width: 50px;
     }
 
     /*#nav-menu {
@@ -202,20 +247,19 @@ body {
     }
 
     .wrap-head a {
-        margin-top: 5px;
-        margin-right: 10px;
+        width: 50px;
         color: white;
-        padding: 8px 10px;
         text-decoration: none;
         font-size: 20px;
         display: block;
-        height: 40px;
-        border-radius: 10px;
+        padding-left: 16px;
+
     }
 
     .wrap-head a.icon {
         background: var(--morado2);
         display: block;
+        line-height: 45px;
     }
 
     .wrap-head a:hover {
