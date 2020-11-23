@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -47,7 +49,7 @@ header a h1 span {
 
 header a img {
     display: block;
-    width: 100px;
+    width: 50px;
     margin: auto;
     padding-bottom: 30px;
 }
@@ -76,6 +78,39 @@ header a img {
 
 .sections a:last-child {
     border-bottom: 1px solid #3B3B3B;
+}
+
+#perfil {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#perfil h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+#perfil h4 {
+    letter-spacing: 1.5px;
+}
+
+#perfil article,
+h4,
+ul,
+li {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+ul li {
+    list-style:
+}
+
+#perfil h4 {
+    text-align: center;
 }
 
 #sticky-menu {
