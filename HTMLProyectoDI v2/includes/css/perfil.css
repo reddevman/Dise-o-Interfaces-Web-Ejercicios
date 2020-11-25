@@ -8,6 +8,7 @@
 
 #perfil {
     width: 100%;
+    height: auto;
     margin: auto;
     margin-top: 50px;
     color: var(--grisOscuro);
@@ -16,18 +17,16 @@
 #perfil h2 {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 3.5px;
 }
 
 #perfil h3 {
-    letter-spacing: 1.5px;
+    letter-spacing: 2.5px;
 }
 
 #perfil article,
 h3,
-ul,
 li {
-    padding-top: 20px;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -37,21 +36,78 @@ h3 {
     text-align: center;
 }
 
-#perfil article > ul {
-    list-style: none;
-}
-
 h4 {
     display: inline-block;
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
 }
 
 ul li i {
-    padding-right: 10px;    
+    padding-right: 10px;
 }
 
-.list-languages {
-    list-style: none;
-    font-size: 15px;
+.curso {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.curso h4 {
+    padding-left: 20px;
+}
+
+article {
+    height: 100%;
+}
+
+.categories {
+    display: flex;
+    margin-top: 100px;
+}
+
+.list-name {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    cursor: pointer;
+    width: 30%;
+    border: var(--grisOscuro);
+    background: var(--grisOscuro);
+    color: var(--blancoOscuro);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 2000ms;
+}
+
+.list-name:hover {
+    background: var(--blancoOscuro);
+    color: var(--grisOscuro);
+    border: 3px solid var(--grisOscuro);
+    font-weight: bold;
+    transition: all 800ms;
+}
+
+.list-name:hover .title{
+    display: none;
+}
+
+.list-name > ul{
+    display: none;
+    width: 100%;
+    margin: auto;
+}
+
+.list-name:hover > ul {
+    display: block;
+}
+
+.list-name:hover > ul > li {
+    text-align: center;
+    font-weight: normal;
+    color: var(--grisOscuro);
+    line-height: 50px;
 }
 
 .devicons {
