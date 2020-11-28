@@ -86,6 +86,7 @@ ul li i {
     width: 30%;
     border: var(--grisOscuro);
     background: var(--grisOscuro);
+    box-shadow: 3px 3px #ccc;
     color: var(--blancoOscuro);
     border-radius: 15px;
     padding: 20px;
