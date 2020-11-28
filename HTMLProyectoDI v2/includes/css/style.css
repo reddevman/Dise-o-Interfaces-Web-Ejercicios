@@ -19,14 +19,15 @@ body {
     height: 95vh;
 }
 
-/*main {
+main {
     height: 100%;
-}*/
+    overflow: hidden;
+}
 
 .container {
     border: 1px solid var(--grisOscuro);
     background: var(--blancoOscuro);
-    height: 100vh;
+    height: 94vh;
     margin: 10px;
     overflow: hidden;
 }
@@ -52,7 +53,8 @@ header a h1 {
 }
 
 header a h1 span {
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 header a img {
@@ -190,10 +192,14 @@ section#indice {
 }
 
 footer {
+    display: block;
     width: 100%;
-    margin: auto;
+    letter-spacing: 3px;
+    font-weight: 200;
+    margin: 0 auto;
+    padding-top: 10px;
     text-align: center;
-    padding: 20px;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1436px) {
