@@ -19,8 +19,14 @@
     display: block;
     width: 350px;
     padding: 30px;
+    filter: contrast(30%);
 }
 
 .categories img:hover {
-    
+    filter: contrast(100%);
+}
+
+#espacio {
+    padding-left: 50px;
+    padding-right: 50px;
 }
