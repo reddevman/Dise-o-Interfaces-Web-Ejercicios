@@ -22,6 +22,8 @@ main {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3.5px;
+    text-shadow: 2px 2px #ccc;
+
 }
 
 #perfil h3 {
@@ -40,11 +42,6 @@ h3 {
     text-align: center;
 }
 
-h4 {
-    display: inline-block;
-    margin-top: 50px;
-}
-
 ul {
     list-style: none;
 }
@@ -61,13 +58,26 @@ ul li i {
     margin-bottom: 50px;
 }
 
-.curso h4 {
-    padding-left: 20px;
-    text-transform: uppercase;
+.curso a {
+    display: block;
+    text-decoration: none;
+    color: var(--blancoOscuro);
+
 }
 
-.article {
-    height: 100%;
+.curso h4 {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    border: var(--grisOscuro);
+    background: var(--grisOscuro);
+    box-shadow: 3px 3px #ccc;
+    color: var(--blancoOscuro);
+}
+
+.curso i {
+    padding-right: 10px;
 }
 
 .categories {
@@ -75,13 +85,13 @@ ul li i {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 
 .list-name {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 10%;
     cursor: pointer;
     width: 30%;
     border: var(--grisOscuro);

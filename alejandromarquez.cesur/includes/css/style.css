@@ -1,7 +1,15 @@
+/* FUENTES */
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
 :root {
     --grisOscuro: #3B3B3B;
     --blancoOscuro: #F8F8F8;
     --blanco: #FEFEFE;
+    --mainFont: 'Raleway', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
 }
 
 
@@ -15,7 +23,7 @@
 
 html,
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--mainFont);
     height: 95vh;
 }
 
@@ -49,12 +57,13 @@ header a h1 {
     padding: 30px;
     font-size: 2em;
     font-weight: 200;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
 }
 
 header a h1 span {
     font-size: 40px;
     font-weight: 500;
+    text-shadow: 2px 2px #ccc;
 }
 
 header a img {
@@ -196,6 +205,7 @@ footer {
     width: 100%;
     letter-spacing: 3px;
     font-weight: 200;
+    font-family: var(--secondaryFont);
     margin: 0 auto;
     padding-top: 10px;
     text-align: center;
