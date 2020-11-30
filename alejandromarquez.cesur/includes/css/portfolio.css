@@ -1,2 +1,26 @@
 @import url("includes/css/style.css");
 
+:root {
+    --grisOscuro: #3B3B3B;
+    --blancoOscuro: #F8F8F8;
+    --blanco: #FEFEFE;
+    --mainFont: 'Raleway', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+}
+
+.categories {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories img {
+    display: block;
+    width: 350px;
+    padding: 30px;
+}
+
+.categories img:hover {
+    
+}
