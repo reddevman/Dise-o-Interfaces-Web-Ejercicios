@@ -70,12 +70,15 @@ ul li i {
 .curso h4 {
     margin-top: 20px;
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     text-transform: uppercase;
     border: var(--grisOscuro);
     background: var(--grisOscuro);
-    box-shadow: 3px 3px #ccc;
     color: var(--blancoOscuro);
+}
+
+.curso h4:hover {
+    box-shadow: 3px 3px #ccc;
 }
 
 .curso i {

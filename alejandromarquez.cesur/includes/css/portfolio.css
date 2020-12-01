@@ -8,17 +8,29 @@
     --secondaryFont: 'Open Sans', sans-serif;
 }
 
+#portfolio {
+    width: 100%;
+    margin: 0 auto;
+    color: var(--grisOscuro);
+}
+
+#portfolio h2 {
+    padding-top: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    text-shadow: 2px 2px #ccc;
+}
+
 .categories {
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 30%;
+    width: 0 auto;
 }
 
 .categories img {
     display: block;
-    width: 350px;
-    padding: 30px;
+    width: 20vh;
+    height: auto;
     filter: contrast(30%);
 }
 
@@ -29,4 +41,26 @@
 #espacio {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.css .fab {
+    position: relative;
+    left: 45%;
+    color: var(--grisOscuro);
+    font-size: 2.5em;
+    margin-top: 30px;
+    filter: contrast(30%);
+}
+
+.cliente .fab {
+    position: relative;
+    left: 45%;
+    color: var(--grisOscuro);
+    font-size: 2.5em;
+    margin-top: 30px;
+    filter: contrast(30%);
+}
+
+.css .fab:hover, .cliente .fab:hover {
+    text-shadow: 3px 3px 2px #ccc;
 }
