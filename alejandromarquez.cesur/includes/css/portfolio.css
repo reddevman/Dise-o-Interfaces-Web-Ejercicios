@@ -9,13 +9,14 @@
 }
 
 #portfolio {
+    height: auto;
     width: 100%;
     margin: 0 auto;
+    margin-top: 50px;
     color: var(--grisOscuro);
 }
 
 #portfolio h2 {
-    padding-top: 2em;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3.5px;
@@ -24,7 +25,7 @@
 
 .categories {
     height: 30%;
-    width: 0 auto;
+    width: 100%;
 }
 
 .categories img {
@@ -43,24 +44,81 @@
     padding-right: 50px;
 }
 
-.css .fab {
-    position: relative;
-    left: 45%;
+.tabla {
+    display: table;
+    margin: 0 auto;
+}
+
+.fila1 {
+    display: table-row;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fila2 {
+    display: table-row;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fila1 a {
+    text-decoration: none;
+    color: var(--grisOscuro);
+}
+
+.css,
+.cliente {
+    display: table-cell;
+    margin: 0 auto;
+}
+
+.css h3 {
+    margin-top: 30px;
+}
+
+.cliente h3 {
+    margin-top: 30px;
+}
+
+.fila2 a {
+    display: table-cell;
+}
+
+a .fab {
     color: var(--grisOscuro);
     font-size: 2.5em;
     margin-top: 30px;
     filter: contrast(30%);
 }
 
-.cliente .fab {
-    position: relative;
-    left: 45%;
-    color: var(--grisOscuro);
-    font-size: 2.5em;
+a .fab:hover {
+    text-shadow: 3px 3px #ccc;
+}
+
+.apps-web {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
+}
+
+.apps-web a {
+    text-decoration: none;
+    color: var(--grisOscuro);
+}
+
+.apps-web a img {
+    display: block;
+    width: 10vh;
+    margin: 0 auto;
+    height: auto;
     filter: contrast(30%);
 }
 
-.css .fab:hover, .cliente .fab:hover {
-    text-shadow: 3px 3px 2px #ccc;
+.apps-web a:hover img {
+    filter: contrast(100%);
+}
+
+.apps-web h3 {
+    margin-top: 30px;
 }
