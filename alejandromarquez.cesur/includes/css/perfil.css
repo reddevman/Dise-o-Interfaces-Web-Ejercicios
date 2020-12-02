@@ -8,10 +8,6 @@
     --secondaryFont: 'Open Sans', sans-serif;
 }
 
-main {
-    height: 100%;
-}
-
 #perfil {
     width: 100%;
     height: auto;
@@ -44,11 +40,11 @@ h3 {
     text-align: center;
 }
 
-ul {
+.list-name ul {
     list-style: none;
 }
 
-ul li i {
+.list-name ul li i {
     padding-right: 10px;
 }
 

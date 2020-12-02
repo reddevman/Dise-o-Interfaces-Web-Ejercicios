@@ -24,18 +24,20 @@ font-family: 'Raleway', sans-serif;
 html,
 body {
     font-family: var(--mainFont);
-    height: 95vh;
+    display: flex;
+	flex-direction: column;
 }
 
 main {
-    height: 100%;
+    flex: 1;
+    height: 95vh;
     /*overflow: hidden;*/
 }
 
 .container {
     border: 1px solid var(--grisOscuro);
     background: var(--blancoOscuro);
-    height: 94vh;
+    min-height: 95vh;
     margin: 10px;
     overflow: hidden;
 }
@@ -73,25 +75,23 @@ header a img {
     padding-bottom: 30px;
 }
 
-section#indice {
+#indice {
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
 }
 
 .sections {
-    position: relative;
+    width: 49%;
+    position: absolute;
     left: 50%;
-    top: 20%;
-    width: 100%;
+    top: 40%;
+    overflow: hidden;
 }
 
 .sections a {
     text-decoration: none;
     color: var(--grisOscuro);
     display: block;
-    width: 30%;
     padding: 20px;
     border-top: 1px solid var(--grisOscuro);
     font-weight: 700;
@@ -201,13 +201,11 @@ section#indice {
 }
 
 footer {
-    display: block;
     width: 100%;
     letter-spacing: 3px;
     font-weight: 200;
     font-family: var(--secondaryFont);
     margin: 0 auto;
-    padding-top: 10px;
     text-align: center;
     overflow: hidden;
 }
