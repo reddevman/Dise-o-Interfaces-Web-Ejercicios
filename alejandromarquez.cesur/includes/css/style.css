@@ -31,6 +31,7 @@ body {
 main {
     flex: 1;
     height: 95vh;
+    padding: 10px;
     /*overflow: hidden;*/
 }
 
@@ -38,7 +39,9 @@ main {
     border: 1px solid var(--grisOscuro);
     background: var(--blancoOscuro);
     min-height: 95vh;
-    margin: 10px;
+    /*margin: 10px;*/
+    width: 100%;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -109,22 +112,22 @@ header a img {
     /*animation: fromRight 500ms linear;*/
 }
 
-@keyframes fromRight {
+/*@keyframes fromRight {
     from {
-        /* from sería desde el 0% de la animación*/
-        /* animación de traslado de un eje determinado */
+        /* from sería desde el 0% de la animación
+        /* animación de traslado de un eje determinado 
         transform: translateX(200%);
         font-size: 40px;
         text-shadow: 2px 2px #ccc;
     }
 
     to {
-        /* to sería el 100% del fin de la animación */
+        /* to sería el 100% del fin de la animación 
         transform: translateX(0%);
         font-size: 40px;
         text-shadow: 2px 2px #ccc;
     }
-}
+}*/
 
 .sections a i {
     padding-right: 10px;
@@ -151,26 +154,18 @@ header a img {
     left: 0;
     top: 0;
     background-color: var(--azul);
-    /* Black fallback color */
     background-color: rgba(59, 59, 59, 0.9);
-    /* Black w/opacity */
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* OVERLAY - Posición del contenido */
 .overlay-content {
     position: relative;
     top: 25%;
-    /* 25% from the top */
     width: 100%;
-    /* 100% width */
     text-align: center;
-    /* Centered text/links */
     margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* OVERLAY - Enlaces */
@@ -181,9 +176,7 @@ header a img {
     font-family: 'Raleway', sans-serif;
     color: black;
     display: block;
-    /* Display block instead of inline */
     transition: 0.3s;
-    /* Transition effects on hover (color) */
 }
 
 /* OVERLAY - Efectos hover de los enlaces */
