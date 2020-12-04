@@ -12,7 +12,6 @@
     height: auto;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
     color: var(--grisOscuro);
 }
 
@@ -121,4 +120,15 @@ a .fab:hover {
 
 .apps-web h3 {
     margin-top: 30px;
+}
+
+@media (max-width:768px) {
+
+    .categories img, .apps-web a img {
+        width: 10vh;
+    }
+
+    .categories img:first-child {
+        margin-left: 70px;
+    }
 }

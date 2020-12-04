@@ -25,7 +25,7 @@ html,
 body {
     font-family: var(--mainFont);
     display: flex;
-	flex-direction: column;
+    flex-direction: column;
 }
 
 main {
@@ -137,9 +137,20 @@ header a img {
     border-bottom: 1px solid var(--grisOscuro);
 }
 
-#sticky-menu span {
-    display: none;
+#sticky-menu {
+    position: relative;
+    top: 20%;
+    width: 60px;
+    background: var(--blanco);
+}
 
+#sticky-menu span {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 10px;
+    text-shadow: 3px 3px #ccc;
 }
 
 /* OVERLAY - Fondo */
@@ -209,7 +220,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
 
     .sections {
         display: none;
@@ -229,7 +240,20 @@ footer {
         cursor: pointer;
         padding: 10px;
         text-shadow: 3px 3px #ccc;
+    }
+}
 
+@media screen and (max-width: 570px) {
+    header {
+        width: 100%;
+    }
+
+    header a h1 {
+        display: none;
+    }
+
+    header a img {
+        padding-top: 20px;
     }
 }
 
