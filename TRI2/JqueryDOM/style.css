@@ -1,0 +1,22 @@
+body {
+    background: #f2f3f4;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .main-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .span-wrapper > span {
+    font-size: 50px;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
