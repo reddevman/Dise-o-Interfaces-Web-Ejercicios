@@ -2,6 +2,14 @@
 
 $(document).ready(function ()
 {
+
+
+  // Evento al hacer clic en tecla 1 - Teclas: (https://keycode.info/)
+  $(document).keypress(function (e) { 
+    if (e.keyCode === 49) {
+      alert("Presionaste 1");
+    }
+  });
     
   // LIMPIAR input
   $("#clean").click(function () {
