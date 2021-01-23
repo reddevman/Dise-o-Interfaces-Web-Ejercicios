@@ -6,7 +6,11 @@
 
 h1 {
     font-family: var(--opensans);
-    text-shadow: 2px 2px lightslategray;
+    border: 2px solid royalblue;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 button {
