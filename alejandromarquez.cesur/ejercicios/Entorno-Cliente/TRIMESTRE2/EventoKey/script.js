@@ -2,9 +2,7 @@ var keyTwice = false;
 
 window.addEventListener("keydown", function (event) {
 
-    if (event.defaultPrevented) {
-        return;
-    }
+    event.preventDefault();
 
     var key = event.key || event.keyCode;
     if (key === "F1") {
