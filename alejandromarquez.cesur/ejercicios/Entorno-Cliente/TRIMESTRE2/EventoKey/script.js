@@ -1,9 +1,14 @@
-window.onkeydown = function (event) {
-    if (event.keyCode === 112) {
-        document.getElementById("texto").innerHTML = "F1 pulsada";
-    } else if (event.keyCode !== 112) {
-        document.getElementById("texto").style.display = "Pulsa F1 para ayuda";
-    } else {
-        document.getElementById("texto").style.display = "none";
+document.addEventListener("keydown", function (event) {
+
+    if (event.defaultPrevented) {
+        return;
     }
-};
+
+    var key = event.key || event.keyCode;
+    if (key === "F1") {
+        document.querySelector("#texto").innerHTML = "F1 pulsada, pulsa otra tecla para borrar mensaje.";
+    } else {
+        document.querySelector("#texto").innerHTML = "Pulsa F1 para ayuda.";
+    }
+
+});
